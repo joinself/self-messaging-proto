@@ -1,0 +1,15 @@
+syntax = "proto3";
+package msgproto;
+option java_package = "net.selfid.app.protocol";
+
+import "msgtype.proto";
+import "google/protobuf/timestamp.proto";
+
+message Message {
+  MsgType type = 1;
+  string id = 2;
+  string sender = 3;
+  string recipient = 4;
+  bytes ciphertext = 5;
+  google.protobuf.Timestamp timestamp = 6;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package msgproto;
+option java_package = "net.selfid.app.protocol";
+
+import "msgtype.proto";
+
+message Auth {
+    MsgType type = 1;
+    string id = 2;
+    string token = 3;
+    string device = 4;
+}

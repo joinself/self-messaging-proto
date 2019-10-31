@@ -1,0 +1,9 @@
+syntax = "proto3";
+package msgproto;
+option java_package = "net.selfid.app.protocol";
+
+enum ACLCommand {
+  LIST = 0;
+  PERMIT = 1;
+  REVOKE = 2;
+}
