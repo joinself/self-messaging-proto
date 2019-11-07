@@ -9,4 +9,5 @@ message Auth {
     string id = 2;
     string token = 3;
     string device = 4;
+    uint64 offset = 5;
 }
