@@ -1,0 +1,12 @@
+syntax = "proto3";
+package msgproto;
+option java_package = "net.selfid.app.protocol";
+
+enum ErrType {
+  ErrConnection = 0;
+  ErrBadRequest = 1;
+  ErrInternal = 2;
+  ErrMessage = 3;
+  ErrAuth = 4;
+  ErrACL = 5;
+}

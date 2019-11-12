@@ -3,9 +3,11 @@ package msgproto;
 option java_package = "net.selfid.app.protocol";
 
 import "msgtype.proto";
+import "errtype.proto";
 
 message Notification {
   MsgType type = 1;
   string id = 2;
   string error = 3;
+  ErrType errtype = 4;
 }
