@@ -1,10 +1,4 @@
 generate:
 	go get -u github.com/golang/protobuf/protoc-gen-go
-	protoc --go_out=. msgtype.proto
-	protoc --go_out=. errtype.proto
-	protoc --go_out=. message.proto
-	protoc --go_out=. acl.proto
-	protoc --go_out=. aclcommand.proto
-	protoc --go_out=. notification.proto
-	protoc --go_out=. header.proto
-	protoc --go_out=. auth.proto
+	protoc --go_out=. msgtype.proto errtype.proto message.proto acl.proto aclcommand.proto notification.proto header.proto auth.proto
+	protoc --proto_path=. --ruby_out=src/ruby msgtype.proto errtype.proto message.proto acl.proto aclcommand.proto notification.proto header.proto auth.proto
