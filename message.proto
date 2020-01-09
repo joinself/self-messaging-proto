@@ -12,5 +12,5 @@ message Message {
   string recipient = 4;
   bytes ciphertext = 5;
   google.protobuf.Timestamp timestamp = 6;
-  uint64 offset = 7;
+  int64 offset = 7;
 }
