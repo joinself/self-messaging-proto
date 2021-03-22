@@ -13,6 +13,7 @@ enum MsgType {
 }
 
 enum MsgSubType {
+  Unknown = 0;
   AuthenticationReq = 1;
   AuthenticationResp = 2;
   AuthenticationQRResp = 3;
