@@ -15,4 +15,5 @@ message Message {
   bytes ciphertext = 5;
   google.protobuf.Timestamp timestamp = 6;
   int64 offset = 7;
+  MsgSubType sub_type = 8;
 }
