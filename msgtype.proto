@@ -2,7 +2,7 @@
 
 syntax = "proto3";
 package msgproto;
-option java_package = "net.selfid.app.protocol";
+option java_package = "com.joinself.app.protocol";
 
 enum MsgType {
   MSG = 0;
@@ -10,4 +10,26 @@ enum MsgType {
   ERR = 2;
   AUTH = 3;
   ACL = 4;
+}
+
+enum MsgSubType {
+  Unknown = 0;
+  AuthenticationReq = 1;
+  AuthenticationResp = 2;
+  AuthenticationQRResp = 3;
+  AuthenticationDeepLinkResp = 4;
+  FactReq = 5;
+  FactResp = 6;
+  FactQRResp = 7;
+  FactDeepLinkResp = 8;
+  EmailSecurityCodeReq = 9;
+  EmailSecurityCodeResp = 10;
+  PhoneSecurityCodeReq = 11;
+  PhoneSecurityCodeResp = 12;
+  PhoneVerificationReq = 13;
+  PhoneVerificationResp = 14;
+  EmailVerificationReq = 15;
+  EmailVerificationResp = 16;
+  DocumentVerificationReq = 17;
+  DocumentVerificationResp = 18;
 }
