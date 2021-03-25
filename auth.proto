@@ -2,7 +2,7 @@
 
 syntax = "proto3";
 package msgproto;
-option java_package = "net.selfid.app.protocol";
+option java_package = "com.joinself.app.protocol";
 
 import "msgtype.proto";
 
