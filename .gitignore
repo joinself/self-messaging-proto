@@ -1,1 +1,4 @@
 *.go
+
+v2/SelfMessaging/*
+SelfMessaging/*

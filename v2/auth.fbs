@@ -1,0 +1,13 @@
+// Copyright 2021 Self Group Ltd. All Rights Reserved.
+
+include "types.fbs";
+
+namespace SelfMessaging;
+
+table Auth {
+  id: string;
+  msgtype: MsgType;
+  token: string;
+  device: string;
+  offset: long;
+}

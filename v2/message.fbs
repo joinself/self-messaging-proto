@@ -1,0 +1,20 @@
+// Copyright 2021 Self Group Ltd. All Rights Reserved.
+
+include "types.fbs";
+
+namespace SelfMessaging;
+
+struct Metadata {
+  timestamp: long;
+  offset: long;
+}
+
+table Message {
+  id: string;
+  msgtype: MsgType;
+  subtype: MsgSubType;
+  sender: string;
+  recipient: string;
+  metadata: Metadata (required);
+  ciphertext: [ubyte];
+}

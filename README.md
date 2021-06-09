@@ -5,11 +5,15 @@ All changes to `.proto` files must be built before commiting.
 
 #### Generating
 
-To generate the go bindings, run:
+To generate the go v1 proto bindings, run:
 ```$sh
-$ make generate
+$ make generate-v1
 ```
 
+To generate the go v2 flatbuffer bindings, run:
+```$sh
+$ make generate-v2
+```
 
 ## Protocol specifications
 

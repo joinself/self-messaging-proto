@@ -1,0 +1,12 @@
+// Copyright 2021 Self Group Ltd. All Rights Reserved.
+
+include "types.fbs";
+
+namespace SelfMessaging;
+
+table Notification {
+  id: string;
+  msgtype: MsgType;
+  error: string;
+  errtype: ErrType;
+} 

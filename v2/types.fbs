@@ -1,0 +1,49 @@
+// Copyright 2021 Self Group Ltd. All Rights Reserved.
+
+namespace SelfMessaging;
+
+enum ACLCommand : byte { 
+    LIST = 0, 
+    PERMIT = 1, 
+    REVOKE = 2 
+}
+
+enum ErrType : byte {
+    ErrConnection = 0,
+    ErrBadRequest = 1,
+    ErrInternal = 2,
+    ErrMessage = 3,
+    ErrAuth = 4,
+    ErrACL = 5
+}
+
+enum MsgType : byte { 
+    MSG = 0, 
+    ACK = 1, 
+    ERR = 2, 
+    AUTH = 3, 
+    ACL = 4 
+}
+
+
+enum MsgSubType : ushort {
+    Unknown = 0,
+    AuthenticationReq = 1,
+    AuthenticationResp = 2,
+    AuthenticationQRResp = 3,
+    AuthenticationDeepLinkResp = 4,
+    FactReq = 5,
+    FactResp = 6,
+    FactQRResp = 7,
+    FactDeepLinkResp = 8,
+    EmailSecurityCodeReq = 9,
+    EmailSecurityCodeResp = 10,
+    PhoneSecurityCodeReq = 11,
+    PhoneSecurityCodeResp = 12,
+    PhoneVerificationReq = 13,
+    PhoneVerificationResp = 14,
+    EmailVerificationReq = 15,
+    EmailVerificationResp = 16,  
+    DocumentVerificationReq = 17,
+    DocumentVerificationResp = 18
+}
