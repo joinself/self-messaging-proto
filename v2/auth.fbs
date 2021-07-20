@@ -11,3 +11,5 @@ table Auth {
   device: string;
   offset: long;
 }
+
+root_type Auth;

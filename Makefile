@@ -11,6 +11,8 @@ generate-v1:
 	protoc --go_out=. auth.proto
 
 generate-v2:
-	cd ../v2
+	cd v2
 	flatc --go *.fbs
 	flatc --go --gen-mutable message.fbs
+	flatc --cpp *.fbs
+	flatc --cpp --gen-mutable message.fbs

@@ -9,4 +9,6 @@ table Notification {
   msgtype: MsgType;
   error: string;
   errtype: ErrType;
-} 
+}
+
+root_type Notification;

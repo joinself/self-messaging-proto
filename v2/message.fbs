@@ -18,3 +18,5 @@ table Message {
   metadata: Metadata (required);
   ciphertext: [ubyte];
 }
+
+root_type Message;

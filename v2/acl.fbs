@@ -10,3 +10,5 @@ table ACL {
   command: ACLCommand;
   payload: [ubyte];
 }
+
+root_type ACL;
