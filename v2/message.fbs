@@ -15,6 +15,7 @@ table Message {
   subtype: MsgSubType;
   sender: string;
   recipient: string;
+  urgent: bool = false;
   metadata: Metadata (required);
   ciphertext: [ubyte];
 }

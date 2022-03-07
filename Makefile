@@ -13,6 +13,5 @@ generate-v1:
 generate-v2:
 	cd v2
 	flatc --go *.fbs
-	flatc --go --gen-mutable message.fbs
 	flatc --cpp *.fbs
-	flatc --cpp --gen-mutable message.fbs
+	flatc --ts *.fbs
