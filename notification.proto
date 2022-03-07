@@ -3,6 +3,7 @@
 syntax = "proto3";
 package msgproto;
 option java_package = "net.selfid.app.protocol";
+option go_package = "github.com/joinself/self-go-sdk/pkg/msgprotov1";
 
 import "msgtype.proto";
 import "errtype.proto";
