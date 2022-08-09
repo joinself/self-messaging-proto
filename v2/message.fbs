@@ -17,7 +17,11 @@ table Message {
   recipient: string;
   metadata: Metadata (required);
   ciphertext: [ubyte];
-  urgent: bool = false;
+  urgent: bool = false (deprecated);
+  priority: uint32;
+  message_type: uint32;
+  collapse_key: [ubyte];
+  notification_payload: [ubyte];
 }
 
 root_type Message;

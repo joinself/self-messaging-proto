@@ -1,6 +1,5 @@
 generate-v1:
 	cd v1
-	go get -u github.com/golang/protobuf/protoc-gen-go
 	protoc --go_out=. msgtype.proto
 	protoc --go_out=. errtype.proto
 	protoc --go_out=. message.proto
