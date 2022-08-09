@@ -1,0 +1,12 @@
+// Copyright 2021 Self Group Ltd. All Rights Reserved.
+
+include "types.fbs";
+
+namespace SelfMessaging;
+
+table Header {
+  id: string;
+  msgtype: MsgType;
+}
+
+root_type Header;
