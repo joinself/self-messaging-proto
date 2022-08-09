@@ -17,7 +17,7 @@ message Message {
   google.protobuf.Timestamp timestamp = 6;
   int64 offset = 7;
   uint32 priority = 8;
-  uint32 message_type = 9;
+  bytes message_type = 9;
   bytes collapse_key = 10;
   bytes notification_payload = 11;
 }
