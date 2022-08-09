@@ -1,5 +1,6 @@
 *.go
+*.h
+*.ts
 
 v2/SelfMessaging/*
 SelfMessaging/*
-*.h
