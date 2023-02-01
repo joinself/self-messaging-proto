@@ -20,4 +20,5 @@ message Message {
   bytes message_type = 9;
   bytes collapse_key = 10;
   bytes notification_payload = 11;
+  bytes authorization = 12;
 }

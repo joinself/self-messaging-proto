@@ -22,6 +22,7 @@ table Message {
   message_type: [ubyte];
   collapse_key: [ubyte];
   notification_payload: [ubyte];
+  authorization: [ubyte];
 }
 
 root_type Message;
