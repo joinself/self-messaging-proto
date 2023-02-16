@@ -8,6 +8,7 @@ generate-v1:
 	protoc --go_out=. notification.proto
 	protoc --go_out=. header.proto
 	protoc --go_out=. auth.proto
+	protoc --go_out=. status.proto
 	protoc --go_out=. watch.proto
 
 generate-v2:

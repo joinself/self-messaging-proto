@@ -23,7 +23,8 @@ enum MsgType : byte {
     ERR = 2, 
     AUTH = 3, 
     ACL = 4,
-    WTC = 5
+    WTC = 5,
+    STS = 6
 }
 
 enum MsgSubType : ushort {

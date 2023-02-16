@@ -6,10 +6,10 @@ option java_package = "net.selfid.app.protocol";
 option go_package = "github.com/joinself/self-go-sdk/pkg/msgprotov1";
 
 import "msgtype.proto";
-import "google/protobuf/timestamp.proto";
 
-message StatusSubscription {
+message Status {
   MsgType type = 1;
   string id = 2;
-  string recipient = 4;
+  string recipient = 3;
+  bool online = 4;
 }

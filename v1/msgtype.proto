@@ -12,4 +12,5 @@ enum MsgType {
   AUTH = 3;
   ACL = 4;
   WTC = 5;
+  STS = 6;
 }
