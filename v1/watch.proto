@@ -5,11 +5,11 @@ package msgproto;
 option java_package = "net.selfid.app.protocol";
 option go_package = "github.com/joinself/self-go-sdk/pkg/msgprotov1";
 
-enum MsgType {
-  MSG = 0;
-  ACK = 1;
-  ERR = 2;
-  AUTH = 3;
-  ACL = 4;
-  WTC = 5;
+import "msgtype.proto";
+
+message Watch {
+  MsgType type = 1;
+  string id = 2;
+  string recipient = 3;
+  bool watch = 4;
 }
