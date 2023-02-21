@@ -9,6 +9,7 @@ table Status {
   msgtype: MsgType;
   recipient: string;
   online: bool;
+  last_seen: long;
 }
 
 root_type Status;
