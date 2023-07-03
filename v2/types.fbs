@@ -2,12 +2,6 @@
 
 namespace SelfMessaging;
 
-enum ACLCommand : byte { 
-    LIST = 0, 
-    PERMIT = 1, 
-    REVOKE = 2 
-}
-
 enum ErrType : byte {
     ErrConnection = 0,
     ErrBadRequest = 1,
@@ -18,11 +12,10 @@ enum ErrType : byte {
 }
 
 enum MsgType : byte { 
-    MSG = 0, 
-    ACK = 1, 
-    ERR = 2, 
-    AUTH = 3, 
-    ACL = 4,
+    MSG = 0,
+    ACK = 1,
+    ERR = 2,
+    AUTH = 3,
     WTC = 5,
     STS = 6
 }
