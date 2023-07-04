@@ -8,7 +8,7 @@ enum ErrType : byte {
     ErrInternal = 2,
     ErrMessage = 3,
     ErrAuth = 4,
-    ErrACL = 5
+    ErrWatch = 6
 }
 
 enum MsgType : byte { 
